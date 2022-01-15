@@ -34,8 +34,8 @@ for i in range(len(nodes)):
 fig, ax = plt.subplots()
 nx.draw_networkx_nodes(G,pos,node_size=55,node_color='yellow')
 nx.draw_networkx_edges(G,pos, width=0.4,edge_color='black')
-ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)
 nx.draw_networkx_labels(G,pos,font_size=8)
+ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)     #adding axis to the graph
 plt.savefig('result.png', dpi=300)                 # saving the resulting graph
 
 
